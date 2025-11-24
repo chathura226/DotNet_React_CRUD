@@ -1,0 +1,31 @@
+@base_address = http://localhost:5000/api/Products
+
+GET {{base_address}}
+Accept: application/json
+
+###
+GET {{base_address}}/3
+Accept: application/json
+
+
+### 
+POST {{base_address}}
+Content-Type: application/json
+
+{
+    "Name": "Table",
+    "UnitPrice": 400.00
+}
+
+### 
+PUT {{base_address}}/3
+Content-Type: application/json
+
+{
+    "Id": 3,
+    "Name": "TableNew",
+    "UnitPrice": 600.00
+}
+
+###
+DELETE {{base_address}}/4
