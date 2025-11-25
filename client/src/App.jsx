@@ -5,10 +5,12 @@ import About from './pages/About'
 import NotFound from './pages/NotFound'
 import Product from './components/product/Product'
 import { Routes, Route } from "react-router";
+import toast, { Toaster } from 'react-hot-toast';
 
 const App = () => {
   return (
     <>
+    <Toaster />
     <Navbar />
     <Routes>
       <Route index element={<Home />} />
@@ -16,6 +18,7 @@ const App = () => {
       <Route path="product" element={<Product />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
+    
     </>
   )
 }
