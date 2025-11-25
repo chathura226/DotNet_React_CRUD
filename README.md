@@ -65,3 +65,11 @@ You almost always need this package when using EF Core with migrations.
 dotnet ef migrations add <name>
 dotnet ef database update # will execute latest migrations
 ```
+
+## Basic Commands - React
+### React ES7 extension snippets
+```
+rfc #react funcitonal component
+rafc #react arrow funcitonal component
+rafce #react arrow funcitonal export component
+```
